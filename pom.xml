@@ -11,7 +11,7 @@
     <groupId>com.cny</groupId>
     <artifactId>ishop-dependencies</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <packaging>pom</packaging>
     <name>ishop-dependencies</name>
     <url>http://www.cny.com</url>
     <inceptionYear>2020-Now</inceptionYear>
@@ -27,9 +27,9 @@
         <spring-cloud-alibaba.version>2.2.0.RELEASE</spring-cloud-alibaba.version>
 
         <!-- Spring Boot Settings -->
-        <!--<spring-boot-alibaba-druid.version>1.1.10</spring-boot-alibaba-druid.version>-->
-        <!--<spring-boot-tk-mybatis.version>2.1.4</spring-boot-tk-mybatis.version>-->
-        <!--<spring-boot-pagehelper.version>1.2.10</spring-boot-pagehelper.version>-->
+        <spring-boot-alibaba-druid.version>1.1.10</spring-boot-alibaba-druid.version>
+        <spring-boot-tk-mybatis.version>2.1.4</spring-boot-tk-mybatis.version>
+        <spring-boot-pagehelper.version>1.2.10</spring-boot-pagehelper.version>
 
         <!-- Commons Settings -->
         <mysql.version>8.0.13</mysql.version>
@@ -38,11 +38,14 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-dependencies</artifactId>
+            <type>pom</type>
             <version>${spring-cloud.version}</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+            <type>pom</type>
+            <scope>import</scope>
             <version>${spring-cloud-alibaba.version}</version>
         </dependency>
     </dependencies>
@@ -56,7 +59,7 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>org.springframework.cloud</groupId>
+                <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
                 <version>${spring-cloud-alibaba.version}</version>
                 <type>pom</type>
@@ -246,6 +249,7 @@
                 <!--<enabled>true</enabled>-->
             <!--</releases>-->
         <!--</repository>-->
+
 
         <repository>
             <id>aliyun-repos</id>
