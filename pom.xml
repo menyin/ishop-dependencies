@@ -234,17 +234,18 @@
     </distributionManagement>
 
     <repositories>
-        <repository>
-            <id>nexus</id>
-            <name>Nexus Repository</name>
-            <url>http://192.168.10.146:8081/repository/maven-public/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </repository>
+        <!--项目依赖的远程仓库-->
+        <!--<repository>-->
+            <!--<id>nexus</id>-->
+            <!--<name>Nexus Repository</name>-->
+            <!--<url>http://192.168.10.146:8081/repository/maven-public/</url>-->
+            <!--<snapshots>-->
+                <!--<enabled>true</enabled>-->
+            <!--</snapshots>-->
+            <!--<releases>-->
+                <!--<enabled>true</enabled>-->
+            <!--</releases>-->
+        <!--</repository>-->
 
         <repository>
             <id>aliyun-repos</id>
@@ -300,17 +301,18 @@
     </repositories>
 
     <pluginRepositories>
-        <pluginRepository>
-            <id>nexus</id>
-            <name>Nexus Plugin Repository</name>
-            <url>http://192.168.10.146:8081/repository/maven-public/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </pluginRepository>
+        <!--maven插件的远程仓库-->
+        <!--<pluginRepository>-->
+            <!--<id>nexus</id>-->
+            <!--<name>Nexus Plugin Repository</name>-->
+            <!--<url>http://192.168.10.146:8081/repository/maven-public/</url>-->
+            <!--<snapshots>-->
+                <!--<enabled>true</enabled>-->
+            <!--</snapshots>-->
+            <!--<releases>-->
+                <!--<enabled>true</enabled>-->
+            <!--</releases>-->
+        <!--</pluginRepository>-->
 
         <pluginRepository>
             <id>aliyun-repos</id>
