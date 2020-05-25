@@ -30,6 +30,7 @@
         <spring-boot-alibaba-druid.version>1.1.10</spring-boot-alibaba-druid.version>
         <spring-boot-tk-mybatis.version>2.1.4</spring-boot-tk-mybatis.version>
         <spring-boot-pagehelper.version>1.2.10</spring-boot-pagehelper.version>
+        <mybatis-spring-boot-starter.version>1.2.10</mybatis-spring-boot-starter.version>
 
         <!-- Commons Settings -->
         <mysql.version>8.0.13</mysql.version>
@@ -91,6 +92,16 @@
                 <version>${mysql.version}</version>
             </dependency>
             <!-- Commons End -->
+
+            <!--mybatis-starter begin-->
+
+            <!--mybatis-spring-boot-starter.version-->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis-spring-boot-starter.version}}</version>
+            </dependency>
+            <!--mybatis-starter end-->
         </dependencies>
     </dependencyManagement>
 
